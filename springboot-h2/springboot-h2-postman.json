@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "ab222ca2-9eac-4895-97bb-58ae39d3b057",
+		"name": "springboot-h2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "650259"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\":101, \r\n    \"name\": \"success life\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " localhost:8080/book/101",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/book/101",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
